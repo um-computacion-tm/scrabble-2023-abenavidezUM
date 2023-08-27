@@ -1,9 +1,15 @@
-from cell import Cell
+#Clases Board
+#Actualizar test
 
 
 class Board:
     def __init__(self):
-        self.grid = [
-            [ Cell(1, '') for _ in range(15) ]
-            for _ in range(15)
-        ]
+        self.board = []
+
+    def place_word(self, word, row, col, direction):
+        # Colocar una palabra en el tablero
+        pass
+
+    def calculate_score(self, word, row, col, direction):
+        # Calcular la puntuación de una palabra en el tablero
+        pass
