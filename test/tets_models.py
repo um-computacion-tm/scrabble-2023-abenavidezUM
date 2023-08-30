@@ -1,9 +1,10 @@
 import unittest
-from game.models import (
+from models import (
     BagTiles,
     Tile,
 )
 from unittest.mock import patch
+
 
 class TestTiles(unittest.TestCase):
     def test_tile(self):
@@ -41,7 +42,7 @@ class TestBagTiles(unittest.TestCase):
             len(tiles),
             2,
         )
-        
+
     def test_put(self):
         bag = BagTiles()
         put_tiles = [Tile('Z', 1), Tile('Y', 1)]
@@ -50,6 +51,7 @@ class TestBagTiles(unittest.TestCase):
             len(bag.tiles),
             7,
         )
-        
+
+
 if __name__ == '__main__':
     unittest.main()
