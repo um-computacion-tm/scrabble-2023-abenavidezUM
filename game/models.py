@@ -19,13 +19,21 @@ class TileBag:
         self.initialize_tiles()
 
     def initialize_tiles(self):
-        # Llenar la bolsa con fichas y barajar
-        pass
+        letter_values = {
+            #Valores de las letras
+        }
+        for letter, value in letter_values.items():
+            self.add_to_bag(Tile(letter, value), 1)
+        shuffle(self.tiles)
+
+    def add_to_bag(self, tile, quantity):
+        self.tiles.extend([tile] * quantity)
 
     def take_tile(self):
-        # Tomar una ficha de la bolsa
-        pass
+        return self.tiles.pop()
 
     def exchange_tiles(self, tiles_to_exchange):
-        # Intercambiar fichas del jugador con la bolsa
-        pass
+        for tile in tiles_to_exchange:
+            self.tiles.remove(tile)
+        self.initialize_tiles()
+        return [self.take_tile() for _ in range(len(tiles_to_exchange))]

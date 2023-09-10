@@ -1,3 +1,8 @@
+##ADDED/[0.0.13] - 10/09/23
+
+- New functions added to the TileBag class;
+
+---------------
 ##ADDED/[0.0.12] - 10/09/23
 
 - Integration of the work environment;
