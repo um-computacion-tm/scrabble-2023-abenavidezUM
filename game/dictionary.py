@@ -6,7 +6,8 @@ class Dictionary:
         self.word_list = word_list
 
     def is_valid_word(self, word):
-        # Verificar si una palabra es válida en el diccionario
-        pass
+        return word in self.word_list
+    
+    #Cargar lista de palabras 
     
     

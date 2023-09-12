@@ -1,3 +1,9 @@
+##ADDED/[0.0.14] - 12/09/23
+
+- New functions added to the Player class;
+- New functions added to the Dictionary class;
+
+---------------
 ##ADDED/[0.0.13] - 10/09/23
 
 - New functions added to the TileBag class;
