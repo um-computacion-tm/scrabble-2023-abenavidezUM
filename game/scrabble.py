@@ -43,5 +43,8 @@ class ScrabbleCli:
         self.game = None
 
     def run(self):
-        # Armar logica para ejecutar el juego
-        pass
+        print("Scrabble Game")
+        num_players = int(input("Enter the number of players (2-4): "))
+        player_names = [input("Enter player {}'s name: ".format(i + 1)) for i in range(num_players)]
+        self.game = ScrabbleGame(player_names)
+        self.game.start_game()

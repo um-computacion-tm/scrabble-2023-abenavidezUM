@@ -1,4 +1,9 @@
-##ADDED/[0.0.14] - 12/09/23
+##ADDED/[0.0.16] - 13/09/23
+
+- New functions added to the ScrabbleGame class;
+
+---------------
+##ADDED/[0.0.15] - 12/09/23
 
 - New functions added to the ScrabbleGame class;
 
