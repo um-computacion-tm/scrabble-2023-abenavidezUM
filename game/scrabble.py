@@ -9,8 +9,11 @@ from player import Player
 
 class ScrabbleGame:
     def __init__(self, player_names):
+        with open("C:\Users\Lenovo\Documents\F\Computacion I\Proyecto\scrabble-2023-abenavidezUM\game\dic.txt", "r") as file:
+            word_list = [line.strip() for line in file]
+
+        self.dictionary = Dictionary(word_list)
         self.tile_bag = TileBag()
-        self.dictionary = Dictionary(load_dictionary())  # Falta armar en la class dictionary 
         self.board = Board()
         self.players = [Player(name, self.tile_bag) for name in player_names]
         self.current_player_index = 0
@@ -37,7 +40,7 @@ class ScrabbleGame:
 
     def is_game_over(self):
         return all(len(player.rack) == 0 and len(self.tile_bag.tiles) == 0 for player in self.players)
-    
+
 class ScrabbleCli:
     def __init__(self):
         self.game = None
@@ -48,3 +51,7 @@ class ScrabbleCli:
         player_names = [input("Enter player {}'s name: ".format(i + 1)) for i in range(num_players)]
         self.game = ScrabbleGame(player_names)
         self.game.start_game()
+
+if __name__ == "__main__":
+    game_cli = ScrabbleCli()
+    game_cli.run()

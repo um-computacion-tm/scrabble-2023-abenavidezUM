@@ -1,3 +1,9 @@
+##ADDED/[0.0.18] - 22/09/23
+
+- New features added to the ScrabbleGame class;
+- Integration with the dictionary;
+
+---------------
 ##ADDED/[0.0.17] - 21/09/23
 
 - New functions added to the board class;
