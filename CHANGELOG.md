@@ -1,3 +1,8 @@
+##ADDED/[0.0.19] - 24/09/23
+
+- New features added to Cell class;
+
+---------------
 ##ADDED/[0.0.18] - 22/09/23
 
 - New features added to the ScrabbleGame class;

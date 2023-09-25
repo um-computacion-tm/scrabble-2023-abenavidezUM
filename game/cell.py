@@ -1,18 +1,25 @@
-from models import Tile
-
 class Cell:
-    def __init__(self, multiplier, multiplier_type):
-        self.multiplier = multiplier
-        self.multiplier_type = multiplier_type
-        self.letter = None
+    def __init__(self, letter_multiplier=1, word_multiplier=1):
+        self.tile = None  
+        self.letter_multiplier = letter_multiplier 
+        self.word_multiplier = word_multiplier  
 
-    def add_letter(self, letter:Tile):
-        self.letter = letter
+    def place_tile(self, tile):
+        """Coloca una ficha en la celda"""
+        self.tile = tile
 
-    def calculate_value(self):
-        if self.letter is None:
+    def remove_tile(self):
+        """Quita la ficha de la celda"""
+        self.tile = None
+
+    def is_empty(self):
+        """Verifica si la celda está vacía"""
+        return self.tile is None
+
+    def get_score(self):
+        """Calcula la puntuacion total de la celda. Considera multiplicadores"""
+        if self.is_empty():
             return 0
-        if self.multiplier_type == 'letter':
-            return self.letter.value * self.multiplier
-        else:
-            return self.letter.value
+        tile_value = self.tile.get_value()
+        score = tile_value * self.letter_multiplier
+        return score * self.word_multiplier
