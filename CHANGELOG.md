@@ -1,3 +1,13 @@
+##ADDED/[0.0.21] - 27/09/23
+
+- Added TestTileBag class to the test_models module;
+
+---------------
+##ADDED/[0.0.21] - 27/09/23
+
+- Added TestTile class to the test_models module;
+
+---------------
 ##ADDED/[0.0.20] - 26/09/23
 
 - Development and implementation of logic for the methods play_word and exchange_tiles;
