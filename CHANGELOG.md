@@ -1,4 +1,4 @@
-##ADDED/[0.0.21] - 27/09/23
+##ADDED/[0.0.22] - 27/09/23
 
 - Added TestTileBag class to the test_models module;
 
