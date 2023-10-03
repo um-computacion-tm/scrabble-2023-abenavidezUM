@@ -1,3 +1,9 @@
+##ADDED/[0.0.23] - 03/10/23
+
+- Added the test_initial_board class to the test_board module to verify the start with 15 rows and 15 columns;
+- Added the test_place_word class to the test_board module to test location;
+
+---------------
 ##ADDED/[0.0.22] - 27/09/23
 
 - Added TestTileBag class to the test_models module;
