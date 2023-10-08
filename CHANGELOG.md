@@ -1,5 +1,10 @@
 ##ADDED/[0.0.23] - 03/10/23
 
+- Added the test_place_word_invalid class to the test_board module to test the word location;
+
+---------------
+##ADDED/[0.0.23] - 03/10/23
+
 - Added the test_initial_board class to the test_board module to verify the start with 15 rows and 15 columns;
 - Added the test_place_word class to the test_board module to test location;
 
