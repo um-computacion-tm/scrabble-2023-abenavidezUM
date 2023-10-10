@@ -1,4 +1,10 @@
-##ADDED/[0.0.25] - 03/10/23
+##ADDED/[0.0.26] - 11/10/23
+
+- test_scrabble_game_initialization checks the initialization of a ScrabbleGame object;
+- test_scrabble_game_exchange_tiles verifies the exchange of chips in the game;
+
+---------------
+##ADDED/[0.0.25] - 10/10/23
 
 - It was verified that the fill_rack method fills the player's rack with letters;
 - It was tested that the play_word method places a valid word on the board and updates the player's score;
