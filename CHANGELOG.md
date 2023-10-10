@@ -1,4 +1,12 @@
-##ADDED/[0.0.23] - 03/10/23
+##ADDED/[0.0.25] - 03/10/23
+
+- It was verified that the fill_rack method fills the player's rack with letters;
+- It was tested that the play_word method places a valid word on the board and updates the player's score;
+- It was verified that the play_word method correctly handles invalid addresses and invalid words;
+- Added tests for the exchange_tiles method, ensuring that it exchanges tokens correctly;
+
+---------------
+##ADDED/[0.0.24] - 03/10/23
 
 - Added the test_place_word_invalid class to the test_board module to test the word location;
 
