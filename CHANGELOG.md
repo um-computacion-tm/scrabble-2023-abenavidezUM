@@ -1,4 +1,11 @@
-##ADDED/[0.0.26] - 11/10/23
+##ADDED/[0.0.27] - 11/10/23
+
+- test_scrabble_game_play_word_invalid_word checks how the game handles an invalid word;
+- test_scrabble_game_play_word_invalid_direction checks how the game handles an invalid word address;
+- test_scrabble_game_play_word checks the play of words in the game;
+
+---------------
+##ADDED/[0.0.26] - 10/10/23
 
 - test_scrabble_game_initialization checks the initialization of a ScrabbleGame object;
 - test_scrabble_game_exchange_tiles verifies the exchange of chips in the game;
