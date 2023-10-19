@@ -1,6 +1,6 @@
 import unittest
 from unittest.mock import MagicMock
-from models import Player, TileBag
+from test_models import Player, TileBag
 
 class TestPlayer(unittest.TestCase):
 
