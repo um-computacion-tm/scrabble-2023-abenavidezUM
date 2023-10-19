@@ -1,3 +1,15 @@
+##ADDED/[0.0.29] - 19/10/23
+
+- Change in the relative path of dic.txt;
+- Define the actual values of the letters in the dictionary letter_values of the TileBag class;
+- Modify the exchange_tiles method so that exchanged tokens are returned to the bag instead of being replaced by new tokens;
+
+---------------
+##ADDED/[0.0.28] - 19/10/23
+
+- test performance;
+
+---------------
 ##ADDED/[0.0.27] - 11/10/23
 
 - test_scrabble_game_play_word_invalid_word checks how the game handles an invalid word;

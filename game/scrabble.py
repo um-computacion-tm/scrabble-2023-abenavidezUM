@@ -9,7 +9,7 @@ from player import Player
 
 class ScrabbleGame:
     def __init__(self, player_names):
-        with open("C:\Users\Lenovo\Documents\F\Computacion I\Proyecto\scrabble-2023-abenavidezUM\game\dic.txt", "r") as file:
+        with open("dic.txt", "r") as file:
             word_list = [line.strip() for line in file]
 
         self.dictionary = Dictionary(word_list)
