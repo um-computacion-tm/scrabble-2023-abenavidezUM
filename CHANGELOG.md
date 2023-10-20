@@ -1,3 +1,8 @@
+##ADDED/[0.0.30] - 20/10/23
+
+- Define constants for letter and word multiplier values instead of using literal values in the constructor;
+
+---------------
 ##ADDED/[0.0.29] - 19/10/23
 
 - Change in the relative path of dic.txt;
