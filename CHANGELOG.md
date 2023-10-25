@@ -1,3 +1,10 @@
+##ADDED/[0.0.32] - 25/10/23
+
+- Added exception handling when trying to open the word file "dic.txt";
+- Implemented input validation for the number of players;
+- At the end of the game, the winner is determined or a tie is announced if necessary;
+
+---------------
 ##ADDED/[0.0.31] - 24/10/23
 
 - Added specific unit tests for the is_valid_move method in both directions ("right" and "down");
