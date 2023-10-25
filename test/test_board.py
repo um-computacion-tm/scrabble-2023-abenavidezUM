@@ -25,7 +25,7 @@ class TestBoard(unittest.TestCase):
         self.assertEqual(self.board.get_square(7, 9), "L")
         self.assertEqual(self.board.get_square(7, 10), "L")
         self.assertEqual(self.board.get_square(7, 11), "O")
-        
+
     def test_place_word_invalid(self):
         # Verificar que no se pueda colocar una palabra en una ubicación inválida
         word = "INVALID"
@@ -37,7 +37,16 @@ class TestBoard(unittest.TestCase):
         self.assertTrue(self.board.is_valid_placement("HELLO", row, col, direction))
         self.board.place_word("HELLO", row, col, direction)
         self.assertFalse(self.board.is_valid_placement(word, row, col, direction))
-        
-        
+
+    def test_is_valid_move_right(self):
+        # Agrega pruebas para is_valid_move con palabras válidas y no válidas en dirección "right"
+        self.assertTrue(self.board.is_valid_placement("HELLO", 7, 7, "right"))
+        self.assertFalse(self.board.is_valid_placement("WORLD", 14, 10, "right"))  # Invalid placement
+
+    def test_is_valid_move_down(self):
+        # Agrega pruebas para is_valid_move con palabras válidas y no válidas en dirección "down"
+        self.assertTrue(self.board.is_valid_placement("PYTHON", 6, 5, "down"))
+        self.assertFalse(self.board.is_valid_placement("TESTING", 12, 2, "down"))  # Invalid placement
+
 if __name__ == '__main__':
     unittest.main()

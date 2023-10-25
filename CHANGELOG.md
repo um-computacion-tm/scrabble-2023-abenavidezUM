@@ -1,3 +1,8 @@
+##ADDED/[0.0.31] - 24/10/23
+
+- Added specific unit tests for the is_valid_move method in both directions ("right" and "down");
+
+---------------
 ##ADDED/[0.0.30] - 20/10/23
 
 - Define constants for letter and word multiplier values instead of using literal values in the constructor;
