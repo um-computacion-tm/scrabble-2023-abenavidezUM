@@ -1,5 +1,8 @@
 #Clases ScrabbleGame y ScrabbleCli
 #Actualizar test
+import os
+
+print("Directorio actual de trabajo:", os.getcwd())
 
 from random import shuffle
 from models import TileBag
@@ -10,7 +13,7 @@ from player import Player
 class ScrabbleGame:
     def __init__(self, player_names):
         try:
-            with open("dic.txt", "r") as file:
+            with open("scrabble-2023-abenavidezUM/dic.txt", "r") as file:
                 word_list = [line.strip() for line in file]
         except FileNotFoundError:
             print("Error: El archivo de palabras 'dic.txt' no se encontró. Asegúrate de que el archivo exista.")

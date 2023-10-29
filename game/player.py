@@ -1,12 +1,17 @@
-#Clases Player
-#Actualizar test
-
 class Player:
     def __init__(self, name, tile_bag):
         self.name = name
         self.rack = []
         self.score = 0
+
+        # Cargar el diccionario de palabras desde el archivo "scrabble-2023-abenavidezUM/game/dic.txt"
+        with open("scrabble-2023-abenavidezUM/dic.txt", "r") as file:
+            dictionary = [line.strip() for line in file]
+
+        # Inicializar el TileBag con el diccionario cargado
         self.tile_bag = tile_bag
+        self.tile_bag.dictionary = dictionary
+
         self.fill_rack()
 
     def fill_rack(self):

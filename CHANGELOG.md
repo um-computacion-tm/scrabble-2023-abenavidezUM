@@ -1,3 +1,9 @@
+##ADDED/[0.0.33] - 29/10/23
+
+- General operating corrections;
+- Changed test_player module;
+
+---------------
 ##ADDED/[0.0.32] - 25/10/23
 
 - Added exception handling when trying to open the word file "dic.txt";

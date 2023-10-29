@@ -1,5 +1,5 @@
 import unittest
-from game.models import (
+from ..game.models import (
     TileBag,
     Tile,
 )

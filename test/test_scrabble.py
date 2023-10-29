@@ -1,7 +1,7 @@
 import unittest
 from unittest.mock import patch, Mock
 from io import StringIO
-from test_scrabble import ScrabbleGame, ScrabbleCli
+from ..game.scrabble import ScrabbleGame, ScrabbleCli
 
 class TestScrabbleGame(unittest.TestCase):
 
